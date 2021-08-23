@@ -2,9 +2,9 @@
 ### Víctor Tirreau
 
 
-| Index  |                                 |
-|--------|------                           |
-| 1      | [Collaborative Filtering](week1/Collaborative%20Filtering%20Recommender%20Systems.md)     |
+| Week   |  Topic                               |
+|--------|------                                |
+| 1      | [Collaborative Filtering](week1/lectura1.md)     |
 
 <!-- 
 
