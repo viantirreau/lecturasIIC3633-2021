@@ -1,3 +1,5 @@
+# Evaluating RecSys
+
 One of the most significant online courses I've taken is "Structuring Machine Learning Projects", taught by Andrew Ng. 
 Even though it was nowhere near as mathematically intense as other courses in the Deep Learning Specialization, 
 it gave a plethora of heuristics and protocols on how to prepare the data, choose an appropriate metric and modify some hyperparameters to achieve the best performance possible. 
