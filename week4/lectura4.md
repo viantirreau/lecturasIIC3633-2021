@@ -15,3 +15,19 @@ items by searching in the neighborhood of a known-relevant. This book section hi
 refine user queries by linearly weighting relevant document vectors and subtracting irrelevant ones from the query vector.
 Nevertheless, the authors acknowledge that there is no theoretical basis or performance guarantees in the method, leading me to the conclusion that 
 better approaches, potentially learnable end-to-end, can be achieved in order to offer a better recommendation experience.
+
+# Introducing Meta-learning
+
+That last thought motivated me to search for some way to further abstract the recommendation pipeline in a learnable way. 
+[Meta-Learning for Recommendation with User-Level Adaptive Model Selection](https://arxiv.org/pdf/2001.10378.pdf) [1] is a 2020 paper which tackles
+ the problem of having many good-enough models that have an acceptable user coverage, but sadly having to choose only one to deploy in production. 
+ They challenge this apparent paradigm by proposing a meta-learning framework which selects the **best single model for each user** according to some metric.
+
+The proposed framework is particularly well-suited for online recommender systems, which respond to user input and preferences in real time. 
+In this regard, it's close to what Rocchio's algorithm tries to solve, as mentioned in the chapter by Pazzani and Billsus. 
+
+---
+
+### References
+
+1. Mi Luo, Fei Chen, Pengxiang Cheng, Zhenhua Dong, Xiuqiang He, Jiashi Feng, and Zhenguo Li. 2020. MetaSelector: Meta-Learning for Recommendation with User-Level Adaptive Model Selection. In Proceedings of The Web Conference 2020 (WWW ’20), April 20–24, 2020, Taipei, Taiwan. ACM, New York, NY, USA, 7 pages. [https://doi.org/10.1145/3366423.3379999](https://doi.org/10.1145/3366423.3379999)
