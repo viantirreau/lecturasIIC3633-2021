@@ -20,11 +20,20 @@ better approaches, potentially learnable end-to-end, can be achieved in order to
 
 That last thought motivated me to search for some way to further abstract the recommendation pipeline in a learnable way. 
 [Meta-Learning for Recommendation with User-Level Adaptive Model Selection](https://arxiv.org/pdf/2001.10378.pdf) [1] is a 2020 paper which tackles
- the problem of having many good-enough models that have an acceptable user coverage, but sadly having to choose only one to deploy in production. 
- They challenge this apparent paradigm by proposing a meta-learning framework which selects the **best single model for each user** according to some metric.
+the problem of having many good-enough models that have an acceptable user coverage, but sadly having to choose only one to deploy in production. 
+They challenge this apparent paradigm by proposing a meta-learning framework which selects the **best single model for each user** according to some metric.
 
 The proposed framework is particularly well-suited for online recommender systems, which respond to user input and preferences in real time. 
 In this regard, it's close to what Rocchio's algorithm tries to solve, as mentioned in the chapter by Pazzani and Billsus. 
+
+The model selection step is designed to be trained end-to-end and uses meta-learning, which can be summarized as "learning to learn". 
+A clear advantage of their approach is that it is task- and model-agnostic, meaning it can adapt to any setting. It can be thought of as a wrapper
+over several specialized models: it learns to respond to a task (learn to predict user preference) in order to select a recommendation model.
+By leveraging SGD over a pre-trained meta-model, the framework is able to rapidly adapt to user changes.
+
+What amazes me the most of this proposal is the change of perspective. From a (single, one-size-fits-all) matrix factorization model, 
+which calculates the inner product between the user and item vector, we jump to a whole new level: as a user, now I can opt to have a specialized model
+just for me. As a student just entering the field, this is definitely the time to get into user-centric RecSys.
 
 ---
 
