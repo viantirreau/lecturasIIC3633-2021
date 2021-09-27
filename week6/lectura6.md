@@ -9,6 +9,10 @@ One architecture that I found interesting is "Wide and Deep Networks". These are
 
 As a side note, it caught my attention that several typos and grammatical slips were present in the article, suggesting that even more proofreading was needed, specially after seven submissions to arXiv.
 
+Coming back to the topic, Deep Learning has proven so successful in recommender systems that most recent conference papers rely on existing or introduce new DL techniques. One area of personal interest is human resources, which happens to have a specialized "RecSys in HR" A* conference. This week, a paper will be presented in RecSys in HR on the subject of intelligent job-offer to candidate matching via content based recommendation [2]. In particular, the authors, who work in a large HR firm called Randstad, train a language model on semantic similarity between the candidates resumes and the job posting texts. They use a large dataset of successful interviews and hirings as positive examples, while using rejections and some random unseen pairs for negatives. They demonstrate this method is far superior to plain TF-IDF features, as most jobs and skills have several synonyms that are not well captured by TF-IDF.
+
 ## References
 
 [1] Kidger, P., & Lyons, T. (2020, July). Universal approximation with deep narrow networks. In Conference on learning theory (pp. 2306-2327). PMLR.
+
+[2] Lavi, D., Medentsiy, V., & Graus, D. (2021). conSultantBERT: Fine-tuned Siamese Sentence-BERT for Matching Jobs and Job Seekers. arXiv preprint arXiv:2109.06501.
