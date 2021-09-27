@@ -9,6 +9,7 @@
 | 3      | [Evaluating RecSys](week3/lectura3.md)           |
 | 4      | [Content-Based RecSys](week4/lectura4.md)           |
 | 5      | [Combining predictions for accurate recommender systems](week5/lectura5.md)           |
+| 6      | [Deep Learning based Recommender Systems: a survey and new perspectives](week6/lectura6.md)           |
 
 <!-- 
 
