@@ -10,6 +10,7 @@
 | 4      | [Content-Based RecSys](week4/lectura4.md)           |
 | 5      | [Combining predictions for accurate recommender systems](week5/lectura5.md)           |
 | 6      | [Deep Learning based Recommender Systems: a survey and new perspectives](week6/lectura6.md)           |
+| 7      | [Interactive recommender systems: A survey of the state of the art and future research challenges and opportunities](week7/lectura7.md)           |
 
 <!-- 
 
